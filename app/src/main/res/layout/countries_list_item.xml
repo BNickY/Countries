@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/windowBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeItemLayout"
+            android:padding="15dp"
+            android:background="?android:selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgFlagView"
+                android:layout_centerVertical="true"
+                android:layout_width="70dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/textViewCountry"
+                android:text="Heading"
+                android:textSize="24sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_toRightOf="@+id/imgFlagView"
+                android:layout_toEndOf="@+id/imgFlagView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/textViewCapital"
+                android:text="Description"
+                android:textSize="18sp"
+                android:layout_below="@+id/textViewCountry"
+                android:layout_alignLeft="@+id/textViewCountry"
+                android:layout_alignStart="@+id/textViewCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

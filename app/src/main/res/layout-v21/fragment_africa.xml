@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="@color/imageBackground"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:text="@string/africa"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgViewAfricaContinent"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:background="@color/imageBackground"
+                app:srcCompat="@drawable/africa" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_dropshadow" />
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <ImageView
+                        android:id="@+id/imgViewSmallAfrica"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/africa_icon"
+                        android:src="@drawable/africa"/>
+
+                    <TextView
+                        android:id="@+id/textAfricaRegion"
+                        android:text="@string/africa"
+                        android:textSize="20sp"
+                        android:textColor="@color/textColorMain"
+                        android:layout_alignTop="@+id/imgViewSmallAfrica"
+                        android:layout_toRightOf="@+id/imgViewSmallAfrica"
+                        android:layout_toEndOf="@+id/imgViewSmallAfrica"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:text="@string/region"
+                        android:layout_below="@+id/textAfricaRegion"
+                        android:layout_alignLeft="@+id/textAfricaRegion"
+                        android:layout_alignStart="@+id/textAfricaRegion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/toolbar_dropshadow" />
+
+                    <ImageView
+                        android:id="@+id/imgAfricaTerritorySize"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/icon_territory"/>
+
+                    <TextView
+                        android:id="@+id/textAreaAfricaRegion"
+                        android:text="@string/africa_size_area"
+                        android:textSize="18sp"
+                        android:textColor="@color/textColorMain"
+                        android:layout_alignTop="@+id/imgAfricaTerritorySize"
+                        android:layout_toRightOf="@+id/imgAfricaTerritorySize"
+                        android:layout_toEndOf="@+id/imgAfricaTerritorySize"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:text="@string/area_region"
+                        android:layout_below="@+id/textAreaAfricaRegion"
+                        android:layout_alignLeft="@+id/textAreaAfricaRegion"
+                        android:layout_alignStart="@+id/textAreaAfricaRegion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_AfricaRegion"
+        android:src="@drawable/action_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

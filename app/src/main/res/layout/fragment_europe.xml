@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="@color/imageBackground"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:text="@string/europe"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgViewEuropeContinent"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:background="@color/imageBackground"
+                app:srcCompat="@drawable/europe" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_dropshadow" />
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <ImageView
+                        android:id="@+id/imgViewSmallEurope"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/europe_icon"
+                        android:src="@drawable/europe_small"/>
+
+                    <TextView
+                        android:id="@+id/textEuropeRegion"
+                        android:text="@string/europe"
+                        android:textSize="20sp"
+                        android:textColor="@color/textColorMain"
+                        android:layout_alignTop="@+id/imgViewSmallEurope"
+                        android:layout_toRightOf="@+id/imgViewSmallEurope"
+                        android:layout_toEndOf="@+id/imgViewSmallEurope"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:text="@string/region"
+                        android:layout_below="@+id/textEuropeRegion"
+                        android:layout_alignLeft="@+id/textEuropeRegion"
+                        android:layout_alignStart="@+id/textEuropeRegion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/toolbar_dropshadow" />
+
+                    <ImageView
+                        android:id="@+id/imgEuropeTerritorySize"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/icon_territory"/>
+
+                    <TextView
+                        android:id="@+id/textAreaEuropeRegion"
+                        android:text="@string/europe_size_area"
+                        android:textSize="18sp"
+                        android:textColor="@color/textColorMain"
+                        android:layout_alignTop="@+id/imgEuropeTerritorySize"
+                        android:layout_toRightOf="@+id/imgEuropeTerritorySize"
+                        android:layout_toEndOf="@+id/imgEuropeTerritorySize"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:text="@string/area_region"
+                        android:layout_below="@+id/textAreaEuropeRegion"
+                        android:layout_alignLeft="@+id/textAreaEuropeRegion"
+                        android:layout_alignStart="@+id/textAreaEuropeRegion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_EuropeRegion"
+        android:src="@drawable/action_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

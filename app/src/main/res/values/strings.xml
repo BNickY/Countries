@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Countries</string>
+    <string name="africa">Africa</string>
+    <string name="region">Region</string>
+    <string name="africa_size_area">30 221 532</string>
+    <string name="area_region">Area, km^2</string>
+    <string name="americas">Americas</string>
+    <string name="americas_size_area">42 549 000</string>
+    <string name="asia">Asia</string>
+    <string name="asia_size_area">44 579 000</string>
+    <string name="europe">Europe</string>
+    <string name="europe_size_area">10 180 000</string>
+    <string name="oceania">Oceania</string>
+    <string name="oceania_size_area">8 525 989</string>
+    <string name="capital_text">Capital</string>
+    <string name="language_text">Language</string>
+    <string name="population_people_text">Population, people</string>
+    <string name="density_text">Population density per km^2</string>
+    <string name="currency_text">Currency</string>
+    <string name="internet_domain_text">Internet domain</string>
+    <string name="telephone_code_text">Telephone Code</string>
+    <string name="search_text">Search</string>
+    <string name="refresh_page">Refresh page</string>
+    <string name="search_country">Search country</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search_by_name">Search by name</string>
+    <string name="action_search_by_capital">Search by capital</string>
+</resources>

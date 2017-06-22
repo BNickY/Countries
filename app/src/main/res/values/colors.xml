@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FFC400</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <color name="textColorSecondary">#757575</color>
+    <color name="textColorMain">#3B3B3B</color>
+
+    <color name="imageBackground">#5BCBF8</color>
+
+    <color name="regionAfricaBackground">#FFC107</color>
+    <color name="regionAmericasBackground">#8BC34A</color>
+    <color name="regionAsiaBackground">#FF5722</color>
+    <color name="regionEuropeBackground">#FF9800</color>
+    <color name="regionOceaniaBackground">#673AB7</color>
+</resources>
